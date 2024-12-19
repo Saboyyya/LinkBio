@@ -1,0 +1,165 @@
+:root {
+  --color-black: #1f2623;
+  --color-white: #fefcfd;
+  --color-purple: #8a2be2;
+  --color-grey: #969088;
+
+  --font-title-desktop: 3rem;
+  --font-span-desktop: 1.5rem;
+  --font-text-desktop: 1.2rem;
+
+  --font-title-mobile: 2rem;
+  --font-span-mobile: 1.2rem;
+  --font-text-mobile: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SUSE", sans-serif;
+}
+html{
+    height: 100vh;
+    font-size: 14px;
+}
+
+body {
+  background-color: var(--color-black) ;
+  height: 100%;
+}
+
+.container{
+    height: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: var(--color-white);
+}
+
+.degrade{
+    background: linear-gradient(to right, var(--color-purple), #a65fe9);
+}
+
+header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header img{
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+header h1{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+section.botoes-link{
+    display: flex;
+    flex-direction: column;
+   
+    gap: 20px;
+}
+
+button{
+    width:100%;
+    padding : 10px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--color-white);
+    transition: .2s;
+}
+
+i{
+    font-size: 1.5em;
+}
+
+footer{
+    text-align: center;
+    margin: 30px;
+}
+
+footer a.btn-footer{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    color: var(--color-white);
+    font-size: 1.5em;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+footer a.btn-footer:hover{
+    transform: scale(1.05);
+
+}
+
+
+@media (max-width: 768px) {
+    header img {
+      max-width: 150px;
+    }
+  
+    header h1 {
+      font-size: var(--font-title-mobile);
+    }
+  
+    header p {
+      font-size: var(--font-text-mobile);
+    }
+  
+    button {
+      font-size: var(--font-text-mobile);
+      padding: 8px 15px;
+    }
+  
+    i {
+      font-size: 1.2em;
+    }
+  
+    footer a.btn-footer {
+      width: 50px;
+      height: 50px;
+      font-size: 1.2em;
+      line-height: 50px;
+      margin: 0 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    html {
+      font-size: 12px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    header img {
+      max-width: 120px;
+    }
+  
+    button {
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+      font-size: 0.9rem;
+    }
+  }
+  
